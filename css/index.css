@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.footer {
+    margin-top: 150px;
+}
+.four {
+    display: flex;
+    justify-content: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: inline-block;
+    padding-right: 50px;
+    list-style: none;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    color: #95e1d3;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f38181;
+}
+
+.nav-link {
+    line-height: 1;
+    display: inline-block;
+    color: #95e1d3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: tomato;
+    transition: width .3s ease-in-out;
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after {
+    width: 100%;
+}
+
+.with {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.amazin {
+    display: flex;
+    justify-content: center;
+}
+
+.work {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.serv {
+    font-size: 30px;
+    padding-top: 23px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.block {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+}
+
+.three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tt {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.six {
+    width: 315px;
+}
+
+.nad {
+    padding-bottom: 15px;
+    padding-left: 60px;
+}
+
+.pod {
+    padding-left: 60px;
+    color: #b3b3b3;
+}
+
+.img {
+    position: relative;
+    top: 34px;
+    height: 30px;
+}
+
+.who {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding-top: 97px;
+}
+
+.meet {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 23px;
+}
+
+.text {
+    text-align: center;
+    color: #b3b3b3;
+    padding-top: 45px;
+}
+
+.messenger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+.four:hover>.messenger:after {
+    opacity: 0.5;
+}
+
+.four>.messenger .img-face {
+    width: 27px;
+    height: 24px;
+}
+
+.four>.messenger .imgfour {
+    width: 27px;
+    height: 27px;
+}
+
+.four>.messenger .imgthree {
+    width: 26px;
+    height: 22px;
+}
+
+.four>.messenger .imgtwo {
+    width: 20px;
+    height: 27px;
+}
+
+.four>.messenger .imgone {
+    width: 14px;
+    height: 27px;
+}
+
+.four>.messenger .list-ul {
+    list-style: none;
+    display: flex;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.four:hover>.messenger .list-ul {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+span {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.four>.messenger .mes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce38a;
+   
+    width: 55px;
+    height: 55px;
+    margin-right: 2px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.four>.messenger .mes:hover {
+    background-color: #95e1d3;
+    
+}
+
+.one {
+    display: flex;
+    padding-top: 85px;
+    width: 100%;
+    height: 100vh;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    /* width: calc(100% / 3); */
+    height: 475px;
+    position: relative;
+}
+
+.two:hover .four {
+    top: -10px;
+    left: -10px;
+}
+
+.four {
+    object-fit: cover;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.four .person {
+    max-width: 100%;
+    width: 100%;
+    height: 475px;
+    object-fit: cover;
+}
+
+.card-gn {
+    position: absolute;
+    left: 0;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    background-color: #95e1d3;
+    z-index: -1;
+    
+    
+}
+
+.four>.messenger:after {
+   
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 20px;
+    bottom: 0;
+    top: 0;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    opacity: 0;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    padding-right: 20px;
+    height: 475px;
+    
+}
+
+.divpers {
+    height: 575px;
+    
+}
+
+.chris {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.chriswork {
+    text-align: center;
+    padding-top: 20px;
+    color: #b3b3b3;
+}
+
+.grey {
+    padding-top: 80px;
+}
+
+.template {
+    display: flex;
+}
+
+.laa {
+    color: #f38181;
+    padding-left: 5px;
+}
+
+input {
+    width: 230px;
+    height: 40px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px gray solid;
+    margin-top: 30px;
+    padding-top: 25px;
+    
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    overflow: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.text-pers {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+footer {
+    margin-top: 150px;
+}
+
+@media (max-width:576px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .mogo {
+        display: flex;
+        justify-content: center;
+    }
+    .three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .six {
+        width: 250px;
+    }
+    .text {
+        text-align: center;
+        margin-right: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 400px;
+    }
+
+    .text-notat {
+        padding-top: 10px;
+        width: 50%;
+    }
+.footer {
+    margin-top: 450px;
+}
+.input {
+    display: flex;
+    justify-content: center;
+}
+.four .person {
+    width: 273px;
+    height: 50%;
+padding-right: 0;
+}
+   .card-gn {
+width: 273px;
+height: calc(61% - 2px);
+margin-left: calc(50% - 136px);
+
+   }
+   .four>.messenger:after {
+
+   }
+   .messenger {
+    width: 294px;
+height: calc(61% - 2px);
+    padding-right: 15%;
+margin-left: calc(50% - 137px);
+
+
+   }
+
+   .four>.messenger .mes {
+       width: 35px;
+       height: 35px;
+       margin-right: 2px;
+    }
+    .list-ul {
+        margin-left: 60px;
+    }
+    .divpers {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .serv {
+        text-align: center;
+    }
+    .end {
+        display: flex;
+        flex-direction: column;
+    }
+    span {
+        padding-left: 5px;
+        
+    }
+    .template {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .four>.messenger .imgfour {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .four>.messenger .imgthree {
+        width: 18px;
+        height: 16px;
+    }
+    
+    .four>.messenger .imgtwo {
+        width: 15px;
+        height: 18px;
+    }
+    
+    .four>.messenger .imgone {
+        width: 11px;
+        height: 18px;
+    }
+    .input {
+        padding-top: 20px;
+    }
+}
+@media (min-width:577px) and (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .mogo {
+        display: flex;
+        justify-content: center;
+    }
+    .three {
+        display: flex;
+        
+        align-items: center;
+    }
+    .tt {
+        display: flex;
+        
+        align-items: center;
+    }
+    .six {
+        width: 250px;
+    }
+    .text {
+        text-align: center;
+        margin-right: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .one {
+        display: flex;
+        flex-direction: column;
+align-items: center;
+    }
+.input {
+    display: flex;
+    justify-content: center;
+}
+    .text-notat {
+        padding-top: 10px;
+        width: 50%;
+    }
+
+.two {
+    margin-top: 20px
+}
+   .card-gn {
+    
+   }
+   .four>.messenger:after {
+       
+   }
+   .messenger {
+    width: 100%;
+
+    padding-right: 13%;
+   }
+   /* .four>.messenger .mes {
+       
+       width: 30px;
+       height: 30px;
+       margin-right: 2px;
+    } */
+    .serv {
+        text-align: center;
+    }
+    .end {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer {
+margin-top: 1150px;
+    }
+    span {
+        padding-left: 5px;
+        
+    }
+    .template {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+    /* .four>.messenger .imgfour {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .four>.messenger .imgthree {
+        width: 16px;
+        height: 12px;
+    }
+    
+    .four>.messenger .imgtwo {
+        width: 10px;
+        height: 16px;
+    }
+    
+    .four>.messenger .imgone {
+        width: 6px;
+        height: 17px;
+    } */
+.input {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
